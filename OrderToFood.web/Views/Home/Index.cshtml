@@ -1,0 +1,19 @@
+﻿@model IEnumerable<OrderFood.Data.Models.Restruant>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+<div>There are @Model.Count() in db.</div>
+
+</div>
+<ul>
+    
+        @foreach(var restruant in Model)
+        {
+        <li>@restruant.Name</li>
+        }
+    
+</ul>
+
